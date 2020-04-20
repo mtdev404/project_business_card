@@ -1,0 +1,694 @@
+/* 
+font-family: 'Saira', sans-serif;
+font-family: 'Saira Condensed', sans-serif; 
+*/
+
+/*global styles reset default values*/
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    /*box-sizing domyślna jest jaka?*/
+}
+
+html {
+    font-size: 10px;
+    font-family: arial, sans-serif;
+    color: #222;
+}
+
+button {
+    border: none;
+}
+
+.header {
+    position: relative;
+    background-color: #29a6dc;
+    font-family: 'Saira Condensed', arial, sans-serif;
+    height: 90vh;
+    text-align: center;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.header>* {
+    position: absolute;
+}
+
+.head_contain {
+    color: #fff;
+    z-index: 2;
+}
+
+.welcome {
+    font-size: 4rem;
+    line-height: 1.1em;
+
+    text-transform: uppercase;
+    margin: 30px 0 15px 50px;
+
+}
+
+.name,
+.job {
+    font-size: 2rem;
+    text-transform: uppercase;
+    line-height: 1.3em;
+}
+
+.name {
+    margin: 0 0 0 45px;
+}
+
+.job {
+    margin: 0 0 0 45px;
+    font-weight: 400;
+}
+
+
+.look {
+    font-family: 'Saira', arial, sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    background-color: #29a6dc;
+    margin: 20px 0 0 55px;
+}
+
+.look_btn {
+    display: block;
+    border: 1px solid #fff;
+    padding: 5px 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.main_img {
+
+    bottom: 0;
+    right: 0;
+    height: 50vh;
+}
+
+/* pierwsza sekcja */
+.crea {
+    text-align: center;
+}
+
+.title {
+    font-family: 'Saira Condensed';
+    font-weight: bold;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    line-height: 1.1em;
+    margin: 20px 0 0 0;
+    padding: 20px 35px 35px;
+
+}
+
+.img_s1 {
+    width: 200px;
+    height: 120px;
+}
+
+.about_large {
+    font-family: 'Saira Condensed';
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    line-height: 1.1em;
+    padding: 20px 35px;
+}
+
+.txt {
+    font-family: 'Saira';
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.1em;
+    padding: 20px 35px;
+
+}
+
+.projects {
+    background-color: #000;
+    color: #fff;
+    padding: 0 0 10px 0;
+}
+
+.title_projects {
+    text-transform: uppercase;
+    font-family: 'Saira Condensed', arial, sans-serif;
+    font-size: 2rem;
+
+}
+
+.project_l,
+.project_r {
+    width: 100vw;
+    margin: 0 0 20px 0;
+}
+
+
+.project_img_l,
+.project_img_r {
+    display: block;
+    width: 100vw;
+}
+
+.txt_container {
+    text-align: left;
+}
+
+.project_name {
+    font-family: 'Saiga', arial, sans-serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    padding: 20px 0;
+    width: 90%;
+    border-bottom: 1px solid white;
+    padding: 30px 0 10px 20px;
+}
+
+.container_l {
+    background-color: #ff4f2c;
+}
+
+.container_r {
+    background-color: #0170ba;
+}
+
+.project_txt {
+    font-family: 'Saiga', arial, sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-align: left;
+    padding: 15px 20px;
+}
+
+.motto {
+    width: 100vw;
+    height: 60vh;
+    background-image: url("../img/motto.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+.motto_cont {
+    width: 100vw;
+    height: 60vh;
+    background-color: #003f72;
+    opacity: 0.5;
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+}
+
+.title_motto {
+    text-transform: uppercase;
+    font-family: 'Saira Condensed', arial, sans-serif;
+    font-size: 2rem;
+    line-height: 4em;
+
+}
+
+.txt_motto {
+    font-family: 'Saira Condensed', arial, sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.1em;
+    padding: 50px 20px;
+}
+
+.author {
+    font-family: 'Saira Condensed', arial, sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.1em;
+}
+
+.free {
+    text-align: center;
+    color: #000;
+}
+
+.free_title {
+    text-transform: uppercase;
+    font-family: 'Saira Condensed', arial, sans-serif;
+    font-size: 2rem;
+    line-height: 4em;
+}
+
+.img_free {
+    width: 100vw;
+}
+
+.image {
+    width: 100vw;
+}
+
+.foot {
+    width: 100vw;
+    background-color: #29a9df;
+    text-align: center;
+}
+
+footer p {
+    font-family: 'Saira Condensed', arial, sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 4em;
+}
+
+@media (min-width:360px) and (orientation:portrait) {
+    .main_img {
+        height: 45vh;
+
+    }
+
+    .welcome {
+        margin: 70px 0 35px 65px;
+    }
+
+    .name {
+        margin: 0 0 0 65px;
+    }
+
+    .job {
+        margin: 0 0 0 65px;
+
+    }
+
+    .look {
+        margin: 40px 0 0 65px;
+    }
+}
+
+@media (min-width:375px) and (orientation:portrait) {
+    .main_img {
+        height: 48vh;
+
+    }
+
+    .welcome {
+        margin: 50px 0 0 75px;
+    }
+
+    .name {
+        margin: 30px 0 0 75px;
+    }
+
+    .job {
+        margin: 0 0 0 75px;
+
+    }
+
+    .look {
+        margin: 40px 0 0 75px;
+
+    }
+}
+
+@media (min-width:414px) and (orientation:portrait) {
+    .main_img {
+        height: 50vh;
+    }
+
+    .welcome {
+        margin: 50px 0 0 90px;
+    }
+
+    .name {
+        margin: 50px 0 0 90px;
+    }
+
+    .job {
+        margin: 0 0 0 90px;
+
+    }
+
+    .look {
+        margin: 50px 0 0 90px;
+
+    }
+}
+
+
+@media (min-width:480px) and (orientation:portrait) {
+    .main_img {
+        height: 50vh;
+    }
+
+    .welcome {
+        margin: 50px 0 0 120px;
+    }
+
+    .name {
+        margin: 50px 0 0 120px;
+    }
+
+    .job {
+        margin: 0 0 0 120px;
+
+    }
+
+    .look {
+        margin: 50px 0 0 120px;
+
+    }
+}
+
+
+@media (min-width: 768px) and (orientation:portrait) {
+    .main_img {
+        height: 50vh;
+        right: 45px;
+
+    }
+
+    .welcome {
+        font-size: 8rem;
+        margin: 50px 0 30px 160px;
+    }
+
+    .name,
+    .job {
+        font-size: 4rem;
+        margin: 0 0 0 160px;
+    }
+
+    .look {
+        font-size: 2rem;
+        margin: 50px 0 0 160px;
+
+    }
+
+    .motto {
+        width: 100vw;
+        height: 30vh;
+
+
+    }
+
+    .motto_cont {
+        width: 100vw;
+        height: 30vh;
+    }
+}
+
+@media (min-width: 1024px) and (orientation:portrait) {
+    .main_img {
+        height: 50vh;
+        right: 45px;
+
+    }
+
+    .welcome {
+        font-size: 12rem;
+        margin: 50px 0 30px 200px;
+    }
+
+    .name,
+    .job {
+        font-size: 6rem;
+        margin: 0 0 0 200px;
+    }
+
+    .look {
+        font-size: 3rem;
+        margin: 50px 0 0 200px;
+
+    }
+}
+
+@media(orientation:landscape) and (min-width:480px) {
+    .head_contain {
+        left: 3%;
+        top: 10%;
+        right: 50%;
+        text-align: left;
+
+    }
+
+    .welcome {
+        font-size: 4rem;
+        margin: 40px 0 10px 10px;
+
+    }
+
+    .name,
+    .job {
+        font-size: 1.8rem;
+        margin: 0 0 0 10px;
+    }
+
+    .look {
+        margin: 10px 0 0 10px;
+        font-size: 10px;
+
+    }
+
+    .main_img {
+        height: 85vh;
+
+    }
+
+}
+
+@media(orientation:landscape) and (min-width:533px) {
+
+    .main_img {
+        height: 90vh;
+        right: 0;
+    }
+}
+
+@media(orientation:landscape) and (min-width:640px) {
+    .head_contain {
+        top: 20px;
+    }
+
+    .welcome {
+        font-size: 5rem;
+        ;
+    }
+
+    .name,
+    .job {
+        font-size: 2.5rem;
+
+    }
+
+    .look {
+        font-size: 1.4rem;
+        ;
+
+    }
+
+    .look_btn {
+        margin-top: 10px;
+
+    }
+
+}
+
+@media(orientation:landscape) and (min-width:1024px) {
+    .main_img {
+        height: 75vh;
+
+    }
+
+    .head_contain {
+        top: 20%;
+    }
+
+    .welcome {
+        font-size: 10rem;
+        ;
+    }
+
+    .name,
+    .job {
+        font-size: 3.6rem;
+
+    }
+
+    .look {
+        font-size: 2.8rem;
+        margin: 20px 0 0 0;
+
+
+    }
+
+    .about {
+        float: left;
+        width: 30%;
+    }
+
+    .i_container_l,
+    .container_l {
+        float: left;
+    }
+
+    .i_container_r,
+    .container_r {
+        float: right;
+    }
+
+    .img_free {
+        float: left;
+    }
+
+    .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    .projects {
+        padding: 30px 40px;
+        width: 100vw;
+        text-align: center;
+    }
+
+    .title_projects {
+        font-family: 'Saira Condensed', arial, sans-serif;
+        font-size: 6rem;
+    }
+
+    .project_l,
+    .project_r {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .project_l {
+        background-color: #ff4f2c;
+    }
+
+    .project_r {
+        background-color: #0170ba;
+    }
+
+    .img_container {
+        width: 50%;
+    }
+
+    .txt_container {
+        width: 50%;
+        padding-bottom: 50px;
+    }
+
+    .project_img_l,
+    .project_img_r {
+        width: 100%;
+    }
+
+    .project_name {
+        font-family: 'Saira', arial, sans-serif;
+        font-size: 3.6rem;
+    }
+
+    .project_txt {
+        font-family: 'Saira', arial, sans-serif;
+        font-weight: 300;
+        font-size: 2.1rem;
+        margin-right: 20px;
+    }
+
+    .title_motto {
+        text-transform: uppercase;
+        font-family: 'Saira Condensed', arial, sans-serif;
+        font-size: 6rem;
+        line-height: 4em;
+        font-weight: 600;
+    }
+
+    .txt_motto {
+        font-family: 'Saira Condensed', arial, sans-serif;
+        font-size: 4rem;
+        line-height: 1.1em;
+        padding: 50px 20px;
+        font-weight: 300;
+    }
+
+    .author {
+        font-family: 'Saira Condensed', arial, sans-serif;
+        font-size: 2.4rem;
+        line-height: 1.1em;
+        font-weight: 300;
+    }
+
+    .free_title {
+        font-family: 'Saira Condensed', Arial, sans-serif;
+        font-size: 6rem;
+    }
+
+    .img_free {
+        width: 50%;
+    }
+
+    .image {
+        width: 100%;
+    }
+
+}
+
+@media(orientation:landscape) and (min-width:1140px) {
+    .main_img {
+        height: 90vh;
+
+    }
+
+    .head_contain {
+        top: 10%;
+    }
+
+    .welcome {
+        font-size: 12rem;
+        margin-bottom: 20px
+    }
+
+    .name,
+    .job {
+        font-size: 4rem;
+
+    }
+
+    .look {
+        font-size: 2rem;
+        margin: 20px 0 0 10px;
+        ;
+
+    }
+}
+
+@media(orientation:landscape) and (min-width:1280px) {
+    .main_img {
+        height: 90vh;
+
+    }
+
+    .head_contain {
+        top: 20%;
+    }
+
+    .welcome {
+        font-size: 12rem;
+        ;
+    }
+
+    .name,
+    .job {
+        font-size: 5.6rem;
+
+    }
+
+    .look {
+        font-size: 3.6rem;
+        margin: 20px 0 0 0;
+        ;
+
+    }
+}
